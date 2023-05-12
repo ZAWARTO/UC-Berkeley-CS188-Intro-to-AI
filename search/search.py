@@ -135,7 +135,7 @@ def breadthFirstSearch(problem):
                 if state not in visited:
                     action = adjacent[1]
                     state_queue.push((state, path + [action]))
-        visited.append(actual_state)
+            visited.append(actual_state)
     return path
 
 def uniformCostSearch(problem):
